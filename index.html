@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <style>
+
+body{
+    font-family: sans-serif;
+}
+
+section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+[class*="col-"] {
+width: 100%;
+}
+}
+.flex-container {
+display: flex;
+justify-content: center;
+}
+
+.flex-container > div {
+    
+width: 200px;
+text-align: center;
+line-height: 30px;
+font-size: 14px;
+}
+
+#buy-on-amazon {
+background-color:crimson;
+}
+#header {
+    top: 0;
+}
+
+
+.nav-link {
+    padding: 50px;
+    margin: 20px;
+}
+
+#header-img {
+    top: 0;
+    width: 150px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+            </style>
+
+        
+    </head>
+    <body>
+        <header id="header">
+            <center>
+            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/1200px-Playstation_logo_colour.svg.png">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#learn-more" >Learn More</a>
+                <a class="nav-link" href="#request coupon" >Request Coupon</a>
+                <a class="nav-link" href="#buy on amazon" >Buy on Amazon</a>
+            </nav>
+        </center>
+        </header>
+        <section id="learn-more">
+          <center>
+            <h1> Playstation</h1>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/MuEVSZYtDl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+        </section>
+        <section id="request coupon">
+            <center>
+                <h2> Request a Coupon </h2>
+            <form id="form"  action="https://www.freecodecamp.com/email-submit">
+<input id="email" type="email" placeholder="you@whatever.com" name="email"></input>
+<input id="submit" type="submit" action>
+</form>
+<center>
+        </section>
+        <section id="buy on amazon">
+            <div class="flex-container">
+                <div><a href="amazon-affiliate-link">Buy on Amazon</div></a>
+                <div><a href="amazon-affiliate-link">Buy at Eb Games</div></a>
+                <div><a href="amazon-affiliate-link">Buy at Jb Hi Fi</div></a>
+              </div>
+        </section>
+
+
+    </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("header");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+    console.log("Js Loaded");
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky")
+      } else {
+       header.classList.remove("sticky");
+      }
+    }
+    </script>
+</html>
